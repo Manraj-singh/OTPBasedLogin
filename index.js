@@ -11,6 +11,9 @@ const db = require("./configs/mongoose");
 //*MIDDLEWARES
 //bodyparseer:used to process data sent in an HTTP request body,it has been incorporated in express new version
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.text());
+app.use(express.json({ type: "application/json" }));
 
 //using expresss router
 app.use("/", require("./Routes"));
