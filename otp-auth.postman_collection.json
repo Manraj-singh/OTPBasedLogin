@@ -11,7 +11,291 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+					"name": "generate-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manrajs636@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/generate-otp",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:15:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dfb44bfce6eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-uMpVPQyIKOpFTWBnUH7H+hx/u1Q\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=P.MiCPSBIT9frwOh1IutTQlj8lPQnzr5BYO9KwITxEg-1684516524-0-ARUZnk0jZwQy271pekkPPVn4R9i9wp8YjzvEofr5CROYIkp1FRweu+cMGc68oZ69of+Ylz4fcPTW4XBWLOc4/Lc=; path=/; expires=Fri, 19-May-23 17:45:24 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=eeasmR3IlrT0q7OBQAmJPjLkIY8AsUlXURaAwtRe5n0-1684516524598-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"OTP sent successfully to manrajs636@gmail.com\"\n}"
+				},
+				{
+					"name": "generate-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manrajs636@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/generate-otp",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "Too Many Requests",
+					"code": 429,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:15:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dfbb33af36eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-dGrpbW4Gz51lOrzk7QK3zOJePvU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=Zjhqfk7izVHB.TxB5mbsFMetZQj1c3LHYCErnjGCH4o-1684516540-0-AYTKXdERPV0MtCG17aukt9/uQWMVRSJgkSTxwAZLisoHKtm1m3LInp6dUc6Wb8vDCiXisd64WgC+vhBjEbDJNTw=; path=/; expires=Fri, 19-May-23 17:45:40 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=L3c8Qyg3ys9YRtu9iy1oPlSQtc1.JzA5Rk4pnsjkpoA-1684516540407-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Please wait for at least 1 minute before generating a new OTP.\"\n}"
+				},
+				{
+					"name": "generate-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/generate-otp",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"generate-otp"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:16:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dfc5119eb6eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-acTYhHo8n79EDNeATJGhTYzQLXg\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=Yc_rfAoxKxoTt5nGAc7YNGwNHh_P0bUnLPDKoAt9xN8-1684516565-0-AUumXRpO8yWNky7gjsuzE2rPUqPuXoD7fk/QQAEjmvJVShBMJuTTiKRvnzARPvk4K05V+rM963evN+RsmN1ZZJ0=; path=/; expires=Fri, 19-May-23 17:46:05 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=HmaGMEao.JjpbPyi_vVJ2NcklNp9LWSf3Al8TARGpoo-1684516565568-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"please enter email\"\n}"
+				}
+			]
 		},
 		{
 			"name": "verify-otp",
@@ -19,7 +303,295 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+					"name": "verify-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manrajs636@gmail.com\",\r\n    \"otp\": \"464552\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/verify",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"verify"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:17:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dfe12cddb6eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-EFawrAgNCYZstHdFdE+yN59Je40\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=HOLUrjz9O5LfvcBRocNqfxlRKqIjzdAo2MhA1RP5H8g-1684516638-0-AadQFZFi0Kpsh9eLp4zIqpN2VdZJV4gX8hwxYjbnyuhbc1NohqRTmKTSkrycPMCNK0HEjiPdt1p1fu+ytl9s6Mk=; path=/; expires=Fri, 19-May-23 17:47:18 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=kpb7nDKlNHi9gtYb6_y9K.hhbzUQl.uJlpijrTu2RPI-1684516638287-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid OTP or email.\"\n}"
+				},
+				{
+					"name": "verify-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manrajs636@gmail.com\",\r\n    \"otp\": \"397902\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/verify",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:18:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9dff43d97b6eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c3-ZWTrsBuX8sRLpQKnGJS07InpITI\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=mzPKfCxRmayRQ9l_Z_.NkLXiIAx1_Je2CuAxJ6t40sU-1684516687-0-AaZw9OYrnzSJY2pq7a25wEgH6+PFKUEaLJv2w2Zxorh5rpRdfVv+1bGn2aRjWwzg5O0c6jYUJaGokRYvzAUQ8Jo=; path=/; expires=Fri, 19-May-23 17:48:07 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=7F8ko3gPovOCXkeg.7el3IMQtkz80G6tdQE.rYQKYOY-1684516687264-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbnJhanM2MzZAZ21haWwuY29tIiwiaWF0IjoxNjg0NTE2Njg3LCJleHAiOjE2ODQ1MjAyODd9.nlJBKNl3MMM7vSsaoCCp2mjjxy_-Mb1iByesKR_ZRuU\"\n}"
+				},
+				{
+					"name": "verify-otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manrajs636@gmail.com\",\r\n    \"otp\": \"397902\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://otp-auth.onrender.com/api/user/verify",
+							"protocol": "https",
+							"host": [
+								"otp-auth",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"verify"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:18:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "7c9e00841a556eb8-BOM"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-46TvvX6KHpdTTcH6hYqBSjry3ec\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Render"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=j3nVrnaCmqlJbFfBp8H3HXGpInZc3WYCqsX_D0Zi_N4-1684516738-0-Afllru+s9pgFA+2iRDNz40SK5v9EBycpfZjbPuGYyXQ3QTGC5PwbSV2ewtTm0TN65Mnp0vjFyWkRf0r0AlbvI3I=; path=/; expires=Fri, 19-May-23 17:48:58 GMT; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=1K8i3gKERD0Oq4MN9OIMSr6_RTVunmBS159m3abuEPU-1684516738378-0-604800000; path=/; domain=.onrender.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Account blocked. Try again after 1 hour.\"\n}"
+				}
+			]
 		},
 		{
 			"name": "signup",
@@ -27,7 +599,134 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+					"name": "signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"test@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"36-EAvnEptumId5e9Qhf9lo558Zs8E\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:19:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Email already registered\"\n}"
+				},
+				{
+					"name": "signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"abc@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "80"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"50-HuEUw2VvLWoOp+Gz8dKkxkkCL3k\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 19 May 2023 17:19:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Email registered Successfully\",\n    \"data\": \"abc@test.com\"\n}"
+				}
+			]
 		}
 	]
 }
