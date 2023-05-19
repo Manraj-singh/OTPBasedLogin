@@ -15,7 +15,7 @@ let transporter = nodemailer.createTransport(
     },
   },
   (err) => {
-    console.log(err);
+    console.error(err);
     return;
   }
 );
