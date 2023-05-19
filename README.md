@@ -29,7 +29,7 @@ alternatively download the zip file
 - JWT
 - Express.js
 - otp-generator
-
+- nodemailer
 
 
 
