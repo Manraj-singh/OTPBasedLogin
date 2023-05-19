@@ -15,7 +15,8 @@ alternatively download the zip file
 
 - navigate to project directory and run npm install to install the dependencies
 - create a .env file and fill details
- ```MONGO_URI = "<>"
+ ```
+ MONGO_URI = "<>"
 JWT_SECRETKEY = "<>"
 EMAIL_USER = <>
 EMAIL_PASS = <>
