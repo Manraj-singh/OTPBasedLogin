@@ -14,7 +14,11 @@ alternatively download the zip file
 ```
 
 - navigate to project directory and run npm install to install the dependencies
-
+- create a .env file and fill details
+- ```MONGO_URI = "<>"
+JWT_SECRETKEY = "<>"
+EMAIL_USER = <>
+EMAIL_PASS = <> ```
 - run **npm start or node index.js** to start the server
 - The application can now be accessed locally at http://localhost:8000/
 
@@ -28,6 +32,7 @@ alternatively download the zip file
 - Node.js
 - JWT
 - Express.js
+- MongoDB
 - otp-generator
 - nodemailer
 
