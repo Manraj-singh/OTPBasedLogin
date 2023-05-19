@@ -51,7 +51,7 @@ module.exports.generateOtp = async (req, res) => {
       return res
         .status(400)
         .json(
-          "your email id is not registered . please use '/signup' endpoint to register your email. or use 'test@test.com' for testing purposes "
+          "your email id is not registered . please use '/signup' endpoint to register your email. "
         );
     }
     // Check if there is a recent OTP entry for the email
@@ -78,32 +78,28 @@ module.exports.generateOtp = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const encryptedOTP = await bcrypt.hash(generatedOTP, salt);
 
-    // Save the OTP in the database
-    //!change to encrypted
-    const otpEntry = new Otp({ email, otp: generatedOTP });
+    // Save the OTP in the database as encrypted
+    const otpEntry = new Otp({ email, otp: encryptedOTP });
     await otpEntry.save();
 
     // Send the OTP to the user's email
     const mailOptions = {
-      from: process.env.EMAIL_PASS,
+      from: process.env.EMAIL_USER,
       to: email,
-      subject: "OTP for Login",
-      text: `Your OTP is: ${generatedOTP}`,
+      subject: "OTP for verification",
+      text: `Your OTP is: ${generatedOTP}. it is valid for 5 mins`,
     };
     nodeMailer.transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log(error);
+        console.error(error);
         return res
           .status(500)
           .json({ status: false, message: "Failed to send OTP." });
       }
-      console.log("OTP sent:", info.response);
-      res.status(200).json({ status: true, message: "OTP sent successfully." });
+      res
+        .status(200)
+        .json({ status: true, message: `OTP sent successfully to ${email}` });
     });
-
-    // Return success response
-    // console.log(generatedOTP);
-    // res.json({ message: "OTP generated and sent successfully." });
   } catch (error) {
     console.error("Error generating OTP:", error);
     res.status(500).json({
@@ -134,7 +130,7 @@ module.exports.verifyOtp = async (req, res) => {
     if (isBlocked) {
       // If the user's account is blocked, return an error with the remaining time until login can be reattempted
       const remainingTime =
-        15 -
+        60 -
         Math.ceil((Date.now() - userDetails.lockedAt.getTime()) / (60 * 1000));
 
       if (remainingTime > 0) {
@@ -159,13 +155,13 @@ module.exports.verifyOtp = async (req, res) => {
         .json({ status: false, message: "Invalid OTP or email." });
     }
     // Compare the provided OTP with the hashed OTP stored in the database
-    //!check below jwt
-    const isOTPValid = otp == latestOTP.otp;
-    // const isOTPValid = await bcrypt.compare(otp, latestOTP.otp);
+    const isOTPValid = await bcrypt.compare(otp, latestOTP.otp);
     if (isOTPValid) {
       // Delete the OTP entry so it can't be reused
       await Otp.deleteOne({ _id: latestOTP._id });
+      userDetails.failedAttempts = 0;
 
+      await userDetails.save();
       // Generate a new JWT token
       const token = jwt.sign({ email }, process.env.JWT_SECRETKEY, {
         expiresIn: "1h",
